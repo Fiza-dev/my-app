@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: echo "demo page"
+        run: |
+           docker build -t fizaaa/my-app:latest . /my-app
 
   deploy:
     runs-on: ubuntu-latest
