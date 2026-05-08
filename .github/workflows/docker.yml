@@ -15,4 +15,4 @@ jobs:
         run: |
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
           docker build -t ${{ secrets.DOCKER_USER }}/my-app .
-          docker push ${{ secrets.DOCKER_USER }}/my-app
+          docker push ${{ secrets.DOCKER_USER }}/my-app 
